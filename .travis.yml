@@ -1,11 +1,11 @@
 env:
   global:
-    - CONAN_REFERENCE: "appimagetool_installer/continuous"
+    - CONAN_REFERENCE: "appimagetool_installer/11"
     - CONAN_USERNAME: "appimage-conan-community"
     - CONAN_LOGIN_USERNAME: "azubieta"
     - CONAN_CHANNEL: "stable"
     - CONAN_UPLOAD: "https://api.bintray.com/conan/appimage-conan-community/public-conan"
-       
+
 linux: &linux
   os: linux
   dist: xenial
