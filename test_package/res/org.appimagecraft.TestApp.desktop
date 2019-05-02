@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Test App
+Comment=Test App
+TryExec=AppRun
+Exec=AppRun
+Icon=appimage
+Categories=Utility;
