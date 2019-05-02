@@ -17,4 +17,4 @@ class AppimagetoolinstallerTestConan(ConanFile):
     def test(self):
         if not tools.cross_building(self.settings):
             self.run("appimagetool %s" % (self.build_folder + "/AppDir"), run_environment=True)
-            self.run(self.build_folder + "/Test_App-x86_64.AppImage")
+            self.run(self.build_folder + "/Test_App-x86_64.AppImage --appimage-extract-and-run")
