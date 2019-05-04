@@ -6,7 +6,6 @@ from conans import ConanFile, CMake, tools
 class AppimagetoolinstallerTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     exports_sources = ("appimage.svg", "org.appimagecraft.TestApp.desktop")
-    generators = "virtualrunenv"
     requires = ("cmake_installer/3.10.0@conan/stable")
     
     def build(self):

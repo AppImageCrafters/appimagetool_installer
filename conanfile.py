@@ -40,5 +40,5 @@ class AppimagetoolinstallerConan(ConanFile):
         self.copy("*", dst="", src="squashfs-root/usr")
 
     def package_info(self):
-        self.cpp_info.libs = self.collect_libs()
+        self.cpp_info.libs = tools.collect_libs(self)
         self.env_info.PATH.append(os.path.join(self.package_folder, "bin"))
