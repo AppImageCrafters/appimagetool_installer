@@ -6,8 +6,8 @@ from conans import ConanFile, CMake, tools
 class AppimagetoolinstallerTestConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     exports_sources = ("appimage.svg", "org.appimagecraft.TestApp.desktop")
-    requires = ("cmake_installer/3.10.0@conan/stable")
-    
+    build_requires = ("cmake_installer/3.10.0@conan/stable")
+
     def build(self):
         cmake = CMake(self)
         cmake.definitions["CMAKE_INSTALL_PREFIX"] = self.build_folder + "/AppDir"
