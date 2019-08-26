@@ -14,6 +14,9 @@ class AppimagetoolinstallerConan(ConanFile):
     requires = ("zlib/1.2.11@conan/stable")
     keep_imports = True
 
+    def configure(self):
+        self.options["zlib"].shared = True
+
     def imports(self):
         self.copy("libz*.so*", src="lib", dst="squashfs-root/usr/lib")
 
