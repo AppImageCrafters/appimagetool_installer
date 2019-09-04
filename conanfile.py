@@ -11,7 +11,7 @@ class AppimagetoolinstallerConan(ConanFile):
     description = "Package desktop applications as AppImages that run on common Linux-based operating systems, such as RHEL, CentOS, openSUSE, SLED, Ubuntu, Fedora, debian and derivatives."
     topics = ("AppImage", "Creation", "Tool")
     settings = "os", "compiler", "build_type", "arch"
-    requires = ("zlib/[>=1.2.9]@conan/stable")
+    requires = ("zlib/[>=1.2.11]@conan/stable")
     keep_imports = True
 
     def configure(self):
